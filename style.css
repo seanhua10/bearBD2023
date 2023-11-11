@@ -42,3 +42,14 @@ body {
     margin-top: 24px;
     font-size: 20px;
 }
+
+.icon{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+}
+img{
+    width: 50px;
+}
