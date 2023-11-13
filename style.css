@@ -59,13 +59,14 @@ body {
 }
 
 .show{
+    width: 85%;
     margin-top: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .title{
-    width: 85%;
+    width: 100%;
     background-color: #969B51;
     border: 2px solid #726060;
     border-radius: 10px 10px 0 0;
@@ -74,7 +75,7 @@ body {
     text-align: center;
 }
 .content{
-    width: 85%;
+    width: 100%;
     height: 280px;
     background-color: #B5C378;
     border: 2px solid #726060;
@@ -84,7 +85,6 @@ body {
     line-height: 1.2;
     border-radius: 0 0 10px 10px;
     display: flex;
-    justify-content: center;
 }
 
 .icon{

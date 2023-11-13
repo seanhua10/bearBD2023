@@ -23,9 +23,7 @@
             <div class="title">
                 <h1>標題</h1>
             </div>
-            <div class="content">
-                <h3>專題財經，身後生態化學滿意模型股份有限公司，腦袋庫存難得一週責任默認收購一定本身，進一步些什麼電器感謝網易開發者大會魔法之前地上，軟體破解不好意思也要職責破解，人間說明總統升級，民國不過有權。
-                </h3>
+            <div class="content">專題財經，身後生態化學滿意模型股份有限公司，腦袋庫存難得一週責任默認收購一定本身，進一步些什麼電器感謝網易開發者大會魔法之前地上，軟體破解不好意思也要職責破解，人間說明總統升級，民國不過有權。
             </div>
         </div>
         <div>
@@ -88,7 +86,22 @@
         </div>
     </div>
     <script>
+        const Answer = document.querySelector(".answer");
+        const Confirm = document.querySelector(".confirm");
+        const Title = document.querySelector(".title");
+        const Content = document.querySelector(".content");
+        // console.log(Answer);
+        // console.log(Confirm);
+        // console.log(Title);
+        // console.log(Content);
 
+        Confirm.addEventListener("click",function(item){
+            if(Answer.value == ""){
+                
+                alert("請輸入待辦事項");
+                Content.innerHTML = ("請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項");
+            }
+        })
     </script>
 </body>
 
