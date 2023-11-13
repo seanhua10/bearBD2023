@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 俐方體11號;
+    src: url(https://github.com/ACh-K/Cubic-11/blob/main/fonts/web/Cubic_11_1.100_R.woff);
+}
 body {
     font-family: 俐方體11號;
 }
