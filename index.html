@@ -7,9 +7,8 @@
     <title>熊熊2023生日大逃脫</title>
     <link rel="stylesheet" href="./reset/reset.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -24,10 +23,18 @@
         </div>
         <div class="show">
             <div class="title">
-                <h1>標題</h1>
+                <h1>規則</h1>
             </div>
             <div class="content">
-                專題財經，身後生態化學滿意模型股份有限公司，腦袋庫存難得一週責任默認收購一定本身，進一步些什麼電器感謝網易開發者大會魔法之前地上，軟體破解不好意思也要職責破解，人間說明總統升級，民國不過有權。
+                <p>1.不知道要做什麼的時候請翻找手邊剛拿到的[信物]以及剛剛給的文字內容，上面或許會有提示或是解答，善用寫字板，並將答案輸入在手機上的欄位中。</p>
+                <p>2.請不要硬翻硬找，猜測解答或是直接偷看答案，請全力配合遊戲指示，按照遊戲的提示絕對可以過關。</p>
+                <p>3.主線任務為主，支線任務有額外獎勵，但支線任務難度較高，支線任務總共有四個，當中有些需要輸入{ 信物 }觸發(例如拿到<span class="red">{手機}</span>後輸入<span
+                        class="red">
+                        <手機>
+                    </span>)。</p>
+
+                <p>4.開開心心遊玩:></p>
+
             </div>
         </div>
         <div>
@@ -89,20 +96,28 @@
             </ul>
         </div>
     </div>
+
     <script>
+        // $(window).on("load", function () {
+        //     alert("生日快樂");
+        // })
+
         const Answer = document.querySelector(".answer");
         const Confirm = document.querySelector(".confirm");
         const Title = document.querySelector(".title");
         const Content = document.querySelector(".content");
+        const Icon = document.querySelector(".icon");
+        const I5 = document.getElementById("i5");
         // console.log(Answer);
         // console.log(Confirm);
         // console.log(Title);
         // console.log(Content);
+        console.log(Icon);
+        console.log(I5);
+
 
         Confirm.addEventListener("click", function (item) {
             if (Answer.value == "") {
-
-                alert("請輸入待辦事項");
                 Content.innerHTML = ("請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項");
             }
         })
