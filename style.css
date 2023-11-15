@@ -25,6 +25,8 @@ body {
     font-size: 64px;
     color: #3C3B3B;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 0%;
 }
 
 .main {

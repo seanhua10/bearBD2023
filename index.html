@@ -7,6 +7,9 @@
     <title>熊熊2023生日大逃脫</title>
     <link rel="stylesheet" href="./reset/reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
@@ -102,24 +105,52 @@
         //     alert("生日快樂");
         // })
 
+        const Year = document.querySelector(".year");
         const Answer = document.querySelector(".answer");
         const Confirm = document.querySelector(".confirm");
         const Title = document.querySelector(".title");
         const Content = document.querySelector(".content");
         const Icon = document.querySelector(".icon");
-        const I5 = document.getElementById("i5");
+        const I1 = document.getElementById("i1 ");
+        const I2 = document.getElementById("i2 ");
+        const I3 = document.getElementById("i3 ");
+        const I4 = document.getElementById("i4 ");
+        const I5 = document.getElementById("i5 ");
+        const I6 = document.getElementById("i6 ");
+        const I7 = document.getElementById("i7 ");
+        const I8 = document.getElementById("i8 ");
+        const I9 = document.getElementById("i9 ");
+        const I10 = document.getElementById("i10");
+        const I11 = document.getElementById("i11");
+        const I12 = document.getElementById("i12");
+        const I13 = document.getElementById("i13");
+        const I14 = document.getElementById("i14");
+        const I15 = document.getElementById("i15");
+        const I16 = document.getElementById("i16");
+        const I17 = document.getElementById("i17");
+        const I18 = document.getElementById("i18");
         // console.log(Answer);
         // console.log(Confirm);
         // console.log(Title);
         // console.log(Content);
         console.log(Icon);
         console.log(I5);
-
+        // Img.style.display = isShow ? "block" : "none"
 
         Confirm.addEventListener("click", function (item) {
             if (Answer.value == "") {
-                Content.innerHTML = ("請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項請輸入待辦事項");
+                Content.innerHTML = ("請輸入內容");
             }
+            // if (Answer.value == "手機") {
+            //     Content.innerHTML = ("請輸入內容");
+            // }
+            if (Answer.value == "測試") {
+                Content.innerHTML = ("這是我們第一次見面，那也是我第一次去坐火車，第一次跑到沒有見面過的人家裡，你也是第一次跟陌生人過夜，我想你應該也蠻緊張，雖然我看起來比你還笨很多，而那天也真的很開心，是直到今天都記得非常清晰的日子。對我來說那天很重要，也因此我把車票留了下來，不知道你還記不記得，那應該是我們生命中最難忘的幾個日子，喔對了鑰匙放在洗衣膠囊裡面，接下來的日子也要好好過，路也要小心走喔。");
+                Year.style.opacity = "100%"
+            }
+            // else if (Answer.value == "手機") {
+            //     Content.innerHTML = ("請輸入內容");
+            // }
         })
     </script>
 </body>
