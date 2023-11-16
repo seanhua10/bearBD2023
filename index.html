@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Noto+Sans+TC&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
@@ -134,13 +135,20 @@
                 $("#ib").show();
             }
 
-            // else if (Answer.value == "車票") {
-            //     Title.innerHTML = ("支線任務出現:尋找<span class='red'>標籤機</span>")
-
             else if (Answer.value == "車票") {
-                Title.innerHTML = ("支線任務出現:尋找標籤機")
-                Content.innerHTML = ("這幾年真的做了經歷了好多不同東西，蒐集了好多娃娃、玩具、公仔，每個<span class='red'>娃娃</span>都是一段回憶");
-                $("#if").show();
+                Title.innerHTML = ("支線任務出現:尋找<span class='red'>標籤機</span>")
+            }
+
+            else if (Answer.value == "標籤機") {
+                Title.innerHTML = ("支線任務:第一次的回憶")
+                Content.innerHTML = ("還記得第一次見面時，當我們要分開的時候你說了什麼嗎?<div>我想我們 _ _ _ _ _ 了</div>");
+                $("#ic").show();
+            }
+
+            else if (Answer.value == "不會再見面") {
+                Title.innerHTML = ("支線任務達成:第一次的回憶")
+                Content.innerHTML = ("第一次見面就是住在你家，那個夜晚我們也都很開心，雖然也沒做什麼，見面的時間也不太長，但我們都很喜歡對方，也還記得你說喜歡我的味道，我也喜歡被你抱的感覺，我們都喜歡在對方身邊溫暖的感受。要分開的時候，我們都躺在床上，你說：「我不想你離開」，我回你之後還會再見面阿，你卻說我們不會再見面了，我還記得你在床上擦乾我的眼淚拍拍我的頭，那大概是你第一次傷我的心吧？恩、你真的很吉掰。");
+                $("#id").show();
             }
 
             else if (Answer.value == "20190809") {
@@ -163,6 +171,18 @@
                 $("#if").show();
             }
 
+            // else if (Answer.value == "漢堡卡比") {
+            //     Title.innerHTML = ("支線任務出現：心碎的回憶")
+            //     Content.innerHTML = ("還記得第一次見面時，當我們要分開的時候你說了什麼嗎?<div>我想我們 _ _ _ _ _ 了</div>");
+            //     $("#ig").show();
+            // }
+
+            else if (Answer.value == "BREAK UP") {
+                Title.innerHTML = ("支線任務達成:心碎的回憶")
+                Content.innerHTML = ("還記得把那隻卡比放到我手上的時候嗎？你說看到他就想到我，想到我就會難受。那是我們分開的時候，分開的時候我們都一樣難過，但我也不知道該怎麼做好，我已經把能說的都說完了，那段日子現在想起來心都還是會痛痛的，對我們兩個人都很難過的一段回憶，對我而言這件事情必然會發生，我想把他當作一個逗號，而你也一直沒有理解，但又有什麼對跟錯嗎？希望我們都有從中間學到什麼。");
+                $("#ih").show();
+            }
+
             else if (Answer.value == "熊熊") {
                 Title.innerHTML = ("熊熊")
                 Content.innerHTML = ("熊熊對我來說是你，可以跟他說話還有抱怨；熊熊對你來說是我，看到他就會想到我，抱著他的時候我們都會想到彼此，他不是我最喜歡的拉拉熊，但他對我來說代表太多了，而且他的綽號跟你一樣，所以他是我最愛的娃娃。說到這些回憶，。");
@@ -173,7 +193,7 @@
                 Year.innerHTML = (2022)
                 Title.innerHTML = ("口罩")
                 Content.innerHTML = ("可能是有點錢還有疫情結束的關係，又或許是我們更珍惜對方了，這年開始我們更常出去玩，我們去看了不少展覽，也去很多地方玩，我們都有留一些紀念品下來，你還記得我們都去哪裡，還有順序嗎？(提示：在櫃子那邊)");
-                $("#ii").show();
+                $("#ij").show();
             }
 
             else if (Answer.value == "SEPIL") {
@@ -181,6 +201,17 @@
                 Content.innerHTML = ("<div>6/1我們在台中玩，第一次跟你的朋友出去，我的印象很深</div><div>9/8我們一起去猴硐貓村，好像那時候開始想在我們去的每個地方買紀念品</div><div>11/1我送你那個櫃子，你說很爛，但現在看起來很棒對吧，不過日期我忘記了</div><div>12/12我們一起去竹南，有點像背包客自助行那樣，我的世界只有你、每天旁邊都是你，想到就覺得開心</div><div>12/26我們跑去看JOJO展拉，我們都喜歡的動漫還真的不多，很開心當時有看過。</div>　<div></div>這些<span class='red'>照片</span>、紀念品真的代表了許多我們的回憶。");
                 $("#ik").show();
             }
+
+            else if (Answer.value == "媽的多重宇宙") {
+                Title.innerHTML = ("支線任務:那些重修舊好的回憶")
+                Content.innerHTML = ("這張票代表很重要的東西");
+                $("#il").show();
+            }
+
+            // else if (Answer.value == "") {
+            //     Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
+            //     Content.innerHTML = ("我不知道你還記不記得我看這部電影第一個哭的地方，在某一個平行宇宙小蓮變成了武打明星，威門也變成了有錢人，都過上了很好的生活，但跟對方對到眼時，有一千萬個無法言喻的情緒湧現，就好像命中注定要在一起一樣。或許是在那一刻我決定要跟你複合，我想要珍惜能夠有的幸福，無論長短、無論方法、無論結果，只要過程有你就好，因為那是無論如何，我都不想放手的東西。");
+            //     $("#im").show();
 
             else if (Answer.value == "照片") {
                 Year.innerHTML = (2023)
@@ -194,6 +225,17 @@
                 Content.innerHTML = ("今年真的很辛苦，從搞畢業專題、搬家、找工作或是直播上都有很多的不順利，但今年也是我們很重要的一年，我們有了一個一起的家了，雖然不算完全同居，但真的覺得自由了很多，看到鑰匙都還會想到那天的樣子，你應該也都還記得吧？鑰匙就是補足缺失的部分。");
                 $("#io").show();
             }
+
+            // else if (Answer.value == "CHIIKAWA") {
+            //     Title.innerHTML = ("支線任務:最快樂的回憶")
+            //     Content.innerHTML = ("<img>");
+            //     $("#ip").show();
+            // }
+
+            // else if (Answer.value == "") {
+            //     Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
+            //     Content.innerHTML = ("最快樂的日子就是有你在的日子，今年雖然很苦，但以後一定會過得很開心，只要有彼此在身邊，接下來我們也都要繼續努力喔。");
+            //     $("#iq").show();
 
             else if (Answer.value == "0311") {
                 Title.innerHTML = ("0311")
