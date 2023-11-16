@@ -30,14 +30,13 @@
                 <h1>規則</h1>
             </div>
             <div class="content">
-                <p>1.不知道要做什麼的時候請翻找手邊剛拿到的[信物]以及剛剛給的文字內容，上面或許會有提示或是解答，善用寫字板，並將答案輸入在手機上的欄位中。</p>
-                <p>2.請不要硬翻硬找，猜測解答或是直接偷看答案，請全力配合遊戲指示，按照遊戲的提示絕對可以過關。</p>
-                <p>3.主線任務為主，支線任務有額外獎勵，但支線任務難度較高，支線任務總共有四個，當中有些需要輸入{ 信物 }觸發(例如拿到<span class="red">{手機}</span>後輸入<span
+                <p>1.不知道要做什麼的時候請翻找手邊剛拿到的[信物]以及剛剛給的文字內容，上面或許會有提示或是解答，善用寫字板，並將答案輸入在手機上的欄位中。<br>
+                    2.請不要硬翻硬找，猜測解答或是直接偷看答案，請全力配合遊戲指示，按照遊戲的提示絕對可以過關。<br>
+                    3.主線任務為主，支線任務有額外獎勵，但支線任務難度較高，支線任務總共有四個，當中有些需要輸入{ 信物 }觸發(例如拿到<span class="red">{手機}</span>後輸入<span
                         class="red">
                         <手機>
-                    </span>)。</p>
-                <p>4.開開心心遊玩:></p>
-
+                    </span>)。<br>
+                    4.開開心心遊玩:><br></p>
             </div>
         </div>
         <div class="icon">
@@ -48,7 +47,7 @@
             <div class="box" id="ib"> <img src="./icon/車票.png" alt="第一次見面的車票"></div>
 
 
-            <div class="box" id="ic"> <img src="./icon/標籤機.png" alt="標籤機"></div>
+            <div class="box" id="ic"> <img src="./icon/標籤機.png" alt="標籤機" class="grey"></div>
 
 
             <div class="box" id="id"> <img src="./icon/標籤機.png" alt="裏.標籤機"></div>
@@ -60,7 +59,7 @@
             <div class="box" id="if"> <img src="./icon/裙子.png" alt="第一次穿的裙子"></div>
 
 
-            <div class="box" id="ig"> <img src="./icon/漢堡.png" alt="卡比漢堡"></div>
+            <div class="box" id="ig"> <img src="./icon/漢堡.png" alt="卡比漢堡" class="grey"></div>
 
 
             <div class="box" id="ih"> <img src="./icon/漢堡.png" alt="裏.卡比漢堡"></div>
@@ -75,7 +74,7 @@
             <div class="box" id="ik"><img src="./icon/櫃子.png" alt="櫃子"></div>
 
 
-            <div class="box" id="il"><img src="./icon/貝果.png" alt="媽的多重宇宙"></div>
+            <div class="box" id="il"><img src="./icon/貝果.png" alt="媽的多重宇宙" class="grey"></div>
 
 
             <div class="box" id="im"><img src="./icon/貝果.png" alt="裏.媽的多重宇宙"></div>
@@ -87,7 +86,7 @@
             <div class="box" id="io"><img src="./icon/蝦子.png" alt="神秘照片"></div>
 
 
-            <div class="box" id="ip"><img src="./icon/其咖挖.png" alt="第一次的拍貼機器"></div>
+            <div class="box" id="ip"><img src="./icon/其咖挖.png" alt="第一次的拍貼機器" class="grey"></div>
 
 
             <div class="box" id="iq"><img src="./icon/其咖挖.png" alt="裏.第一次的拍貼機器"></div>
@@ -109,12 +108,7 @@
         const Title = document.querySelector(".title");
         const Content = document.querySelector(".content");
         const Icon = document.querySelector(".icon");
-        // console.log(Answer);
-        // console.log(Confirm);
-        // console.log(Title);
-        // console.log(Content);
-        // console.log(Icon);
-        // <span class='red'>鑰匙</span>
+
         $(".box").hide();
 
 
@@ -130,24 +124,28 @@
                 $(".filter").removeClass("filter")
                 Year.style.opacity = "100%"
                 Title.innerHTML = ("20190308")
-                Content.innerHTML = ("這是我們第一次見面，那也是我第一次去坐火車，第一次跑到沒有見面過的人家裡，你也是第一次跟陌生人過夜，我想你應該也蠻緊張，雖然我看起來比你還笨很多，而那天也真的很開心，是直到今天都記得非常清晰的日子。對我來說那天很重要，也因此我把<span class='red'>車票</span>留了下來，不知道你還記不記得，那應該是我們生命中最難忘的幾個日子，喔對了鑰匙放在洗衣膠囊裡面，接下來的日子也要好好過，路也要小心走喔。");
+                Content.innerHTML = ("這是我們第一次見面，那也是我第一次去坐火車，第一次跑到沒有見面過的人家裡，你也是第一次跟陌生人過夜，我想你應該也蠻緊張，雖然我看起來比你還笨很多，而那天也真的很開心，是直到今天都記得非常清晰的日子。<br>對我來說那天很重要，也因此我把<span class='red'>車票</span>留了下來，不知道你還記不記得，那應該是我們生命中最難忘的幾個日子。<br>喔對了鑰匙放在洗衣膠囊裡面，接下來的日子也要好好過，路也要小心走喔。");
+                const Cb = Content.innerHTML
                 Year.style.opacity = "100%"
                 $("#ib").show();
             }
 
             else if (Answer.value == "車票") {
                 Title.innerHTML = ("支線任務出現:尋找<span class='red'>標籤機</span>")
+                Content.innerHTML = ("");
             }
 
             else if (Answer.value == "標籤機") {
                 Title.innerHTML = ("支線任務:第一次的回憶")
                 Content.innerHTML = ("還記得第一次見面時，當我們要分開的時候你說了什麼嗎?<div>我想我們 _ _ _ _ _ 了</div>");
+                const Cc = Content.innerHTML
                 $("#ic").show();
             }
 
             else if (Answer.value == "不會再見面") {
                 Title.innerHTML = ("支線任務達成:第一次的回憶")
-                Content.innerHTML = ("第一次見面就是住在你家，那個夜晚我們也都很開心，雖然也沒做什麼，見面的時間也不太長，但我們都很喜歡對方，也還記得你說喜歡我的味道，我也喜歡被你抱的感覺，我們都喜歡在對方身邊溫暖的感受。要分開的時候，我們都躺在床上，你說：「我不想你離開」，我回你之後還會再見面阿，你卻說我們不會再見面了，我還記得你在床上擦乾我的眼淚拍拍我的頭，那大概是你第一次傷我的心吧？恩、你真的很吉掰。");
+                Content.innerHTML = ("第一次見面就是住在你家，那個夜晚我們也都很開心，雖然也沒做什麼，見面的時間也不太長，但我們都很喜歡對方，也還記得你說喜歡我的味道，我也喜歡被你抱的感覺，我們都喜歡在對方身邊溫暖的感受。<br>要分開的時候，我們都躺在床上，你說：「我不想你離開」，我回你之後還會再見面阿，你卻說我們不會再見面了，我還記得你在床上擦乾我的眼淚拍拍我的頭，那大概是你第一次傷我的心吧？<br>恩、你真的很吉掰。");
+                const Cd = Content.innerHTML
                 $("#id").show();
             }
 
@@ -155,63 +153,97 @@
                 Year.innerHTML = (2020)
                 Title.innerHTML = ("20190809")
                 Content.innerHTML = ("接下來就是交往的第二年，在那之後也你也陪我做很多事情，我第一次穿裙子是為了你也是為了自己，你給了我很多勇氣，所以讓我有今天的樣子，你也都會在穿裙子的時候給我摸摸，對我來說有很多回憶");
+                const Ce = Content.innerHTML
                 $("#ie").show();
             }
 
             else if (Answer.value == "SHIRT") {
                 Title.innerHTML = ("SHIRT")
                 Content.innerHTML = ("這幾年真的做了經歷了好多不同東西，蒐集了好多娃娃、玩具、公仔，每個<span class='red'>娃娃</span>都是一段回憶");
+                const Cf = Content.innerHTML
                 $("#if").show();
             }
 
             else if (Answer.value == "娃娃") {
                 Year.innerHTML = (2021)
-                Title.innerHTML = ("SHIRT")
+                Title.innerHTML = ("娃娃們")
                 Content.innerHTML = ("說到回憶，我們這四年多來也有很多隻能夠當作紀念的娃娃，裡面有一隻算是我最喜歡的，你猜猜看是哪一隻。");
-                $("#if").show();
             }
 
-            // else if (Answer.value == "漢堡卡比") {
-            //     Title.innerHTML = ("支線任務出現：心碎的回憶")
-            //     Content.innerHTML = ("還記得第一次見面時，當我們要分開的時候你說了什麼嗎?<div>我想我們 _ _ _ _ _ 了</div>");
-            //     $("#ig").show();
-            // }
+            else if (Answer.value == "201903") {
+                Title.innerHTML = ("201903")
+                Content.innerHTML = ("他叫做熊頭，是你送我的生日禮物，他超棒的，但是有點破破的了，肯定是你對他不夠愛護!不過他是你最好的枕頭。");
+            }
+            else if (Answer.value == "202001") {
+                Title.innerHTML = ("202001")
+                Content.innerHTML = ("他叫做大胖胖拉拉，是坐飛機來的，胖胖的很可愛，但是抱久了會起毛球，都不太敢碰他。");
+            }
+            else if (Answer.value == "202103") {
+                Title.innerHTML = ("202103")
+                Content.innerHTML = ("他叫做熊熊，又胖又可愛，而且還很好抱，可以跟他說話，又可以拿他攻擊你，是一個很乖的好熊熊。");
+            }
+            else if (Answer.value == "202109") {
+                Title.innerHTML = ("202109")
+                Content.innerHTML = ("他叫做普普羅，在我家有一個雙胞胎，抱起來都一樣舒服，還記得是在夾娃娃店拿到的，但好像真的是正版欸。");
+            }
+            else if (Answer.value == "202212") {
+                Title.innerHTML = ("202212")
+                Content.innerHTML = ("他是高貴拉拉，我想不說你也知道為甚麼，他的腳好短好可愛，很值得拍打。");
+            }
+            else if (Answer.value == "202308") {
+                Title.innerHTML = ("202308")
+                Content.innerHTML = ("他叫做大大拉拉，只要五百塊?反正就是超便宜，不過跟小狗一樣會掉毛，到底是麼意思?");
+            }
+
+            else if (Answer.value == "漢堡卡比") {
+                Title.innerHTML = ("支線任務出現：心碎的回憶")
+                Content.innerHTML = ("打開筆電，會給你一些提示...");
+                const Cg = Content.innerHTML
+                $("#ig").show();
+            }
 
             else if (Answer.value == "BREAK UP") {
                 Title.innerHTML = ("支線任務達成:心碎的回憶")
-                Content.innerHTML = ("還記得把那隻卡比放到我手上的時候嗎？你說看到他就想到我，想到我就會難受。那是我們分開的時候，分開的時候我們都一樣難過，但我也不知道該怎麼做好，我已經把能說的都說完了，那段日子現在想起來心都還是會痛痛的，對我們兩個人都很難過的一段回憶，對我而言這件事情必然會發生，我想把他當作一個逗號，而你也一直沒有理解，但又有什麼對跟錯嗎？希望我們都有從中間學到什麼。");
+                Content.innerHTML = ("還記得把那隻卡比放到我手上的時候嗎？你說看到他就想到我，想到我就會難受。那是我們分開的時候，分開的時候我們都一樣難過，但我也不知道該怎麼做好，我已經把能說的都說完了。<br>那段日子現在想起來心都還是會痛痛的，對我們兩個人都很難過的一段回憶，對我而言這件事情必然會發生，我想把他當作一個逗號，而你也一直沒有理解，但又有什麼對跟錯嗎？<br>希望我們都有從中間學到什麼。");
+                const Ch = Content.innerHTML
                 $("#ih").show();
             }
 
             else if (Answer.value == "熊熊") {
                 Title.innerHTML = ("熊熊")
-                Content.innerHTML = ("熊熊對我來說是你，可以跟他說話還有抱怨；熊熊對你來說是我，看到他就會想到我，抱著他的時候我們都會想到彼此，他不是我最喜歡的拉拉熊，但他對我來說代表太多了，而且他的綽號跟你一樣，所以他是我最愛的娃娃。說到這些回憶，。");
+                Content.innerHTML = ("熊熊對我來說是你，可以跟他說話還有抱怨；熊熊對你來說是我，看到他就會想到我，抱著他的時候我們都會想到彼此。<br>他不是我最喜歡的拉拉熊，但他對我來說代表太多了，而且他的綽號跟你一樣，所以他是我最愛的娃娃。<br>說到這些回憶，都是因為你有騎摩托車載我們出去玩，去找看看吧。");
+                const Ci = Content.innerHTML
                 $("#ii").show();
             }
 
-            else if (Answer.value == "口罩") {
+            else if (Answer.value == "鑰匙") {
                 Year.innerHTML = (2022)
-                Title.innerHTML = ("口罩")
-                Content.innerHTML = ("可能是有點錢還有疫情結束的關係，又或許是我們更珍惜對方了，這年開始我們更常出去玩，我們去看了不少展覽，也去很多地方玩，我們都有留一些紀念品下來，你還記得我們都去哪裡，還有順序嗎？(提示：在櫃子那邊)");
+                Title.innerHTML = ("鑰匙")
+                Content.innerHTML = ("可能是有點錢還有疫情結束的關係，又或許是我們更珍惜對方了，這年開始我們更常出去玩，我們去看了不少展覽，也去很多地方玩。<br>我們都有留一些紀念品下來，你還記得我們都去哪裡，還有順序嗎？(提示：在櫃子那邊)");
+                const Cj = Content.innerHTML
                 $("#ij").show();
             }
 
             else if (Answer.value == "SEPIL") {
                 Title.innerHTML = ("SEP17")
-                Content.innerHTML = ("<div>6/1我們在台中玩，第一次跟你的朋友出去，我的印象很深</div><div>9/8我們一起去猴硐貓村，好像那時候開始想在我們去的每個地方買紀念品</div><div>11/1我送你那個櫃子，你說很爛，但現在看起來很棒對吧，不過日期我忘記了</div><div>12/12我們一起去竹南，有點像背包客自助行那樣，我的世界只有你、每天旁邊都是你，想到就覺得開心</div><div>12/26我們跑去看JOJO展拉，我們都喜歡的動漫還真的不多，很開心當時有看過。</div>　<div></div>這些<span class='red'>照片</span>、紀念品真的代表了許多我們的回憶。");
+                Content.innerHTML = ("6/1我們在台中玩，第一次跟你的朋友出去，我的印象很深<br>9/8我們一起去猴硐貓村，好像那時候開始想在我們去的每個地方買紀念品<br>11/1我送你那個櫃子，你說很爛，但現在看起來很棒對吧，不過日期我忘記了<br>12/12我們一起去竹南，有點像背包客自助行那樣，我的世界只有你、每天旁邊都是你，想到就覺得開心<br>12/26我們跑去看JOJO展拉，我們都喜歡的動漫還真的不多，很開心當時有看過。<br>這些<span class='red'>照片</span>、紀念品真的代表了許多我們的回憶。");
+                const Ck = Content.innerHTML
                 $("#ik").show();
             }
 
             else if (Answer.value == "媽的多重宇宙") {
                 Title.innerHTML = ("支線任務:那些重修舊好的回憶")
                 Content.innerHTML = ("這張票代表很重要的東西");
+                const Cl = Content.innerHTML
                 $("#il").show();
             }
 
-            // else if (Answer.value == "") {
-            //     Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
-            //     Content.innerHTML = ("我不知道你還記不記得我看這部電影第一個哭的地方，在某一個平行宇宙小蓮變成了武打明星，威門也變成了有錢人，都過上了很好的生活，但跟對方對到眼時，有一千萬個無法言喻的情緒湧現，就好像命中注定要在一起一樣。或許是在那一刻我決定要跟你複合，我想要珍惜能夠有的幸福，無論長短、無論方法、無論結果，只要過程有你就好，因為那是無論如何，我都不想放手的東西。");
-            //     $("#im").show();
+            else if (Answer.value == "貝果") {
+                Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
+                Content.innerHTML = ("我不知道你還記不記得我看這部電影第一個哭的地方，在某一個平行宇宙小蓮變成了武打明星，威門也變成了有錢人，都過上了很好的生活，但跟對方對到眼時，有一千萬個無法言喻的情緒湧現，就好像命中注定要在一起一樣。<br>或許是在那一刻我決定要跟你複合，我想要珍惜能夠有的幸福，無論長短、無論方法、無論結果，只要過程有你就好，因為那是無論如何，我都不想放手的東西。");
+                const Cm = Content.innerHTML
+                $("#im").show();
+            }
 
             else if (Answer.value == "照片") {
                 Year.innerHTML = (2023)
@@ -222,24 +254,27 @@
 
             else if (Answer.value == "蝦子") {
                 Title.innerHTML = ("蝦子")
-                Content.innerHTML = ("今年真的很辛苦，從搞畢業專題、搬家、找工作或是直播上都有很多的不順利，但今年也是我們很重要的一年，我們有了一個一起的家了，雖然不算完全同居，但真的覺得自由了很多，看到鑰匙都還會想到那天的樣子，你應該也都還記得吧？鑰匙就是補足缺失的部分。");
+                Content.innerHTML = ("今年真的很辛苦，從搞畢業專題、搬家、找工作或是直播上都有很多的不順利，但今年也是我們很重要的一年，我們有了一個一起的家了，雖然不算完全同居，但真的覺得自由了很多。<br>看到鑰匙都還會想到那天的樣子，你應該也都還記得吧？<br>鑰匙就是補足缺失的部分。");
                 $("#io").show();
             }
 
-            // else if (Answer.value == "CHIIKAWA") {
-            //     Title.innerHTML = ("支線任務:最快樂的回憶")
-            //     Content.innerHTML = ("<img>");
-            //     $("#ip").show();
-            // }
+            else if (Answer.value == "CHIIKAWA") {
+                Title.innerHTML = ("支線任務:最快樂的回憶")
+                Content.innerHTML = ("<img src='./image/拍貼機.png' alt='拍貼機'>");
+                $("#ip").show();
+            }
 
-            // else if (Answer.value == "") {
-            //     Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
-            //     Content.innerHTML = ("最快樂的日子就是有你在的日子，今年雖然很苦，但以後一定會過得很開心，只要有彼此在身邊，接下來我們也都要繼續努力喔。");
-            //     $("#iq").show();
+            else if (Answer.value == "") {
+                Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
+                Content.innerHTML = ("最快樂的日子就是有你在的日子，今年雖然很苦，但以後一定會過得很開心，只要有彼此在身邊，接下來我們也都要繼續努力喔。");
+                const Cq = Content.innerHTML
+                $("#iq").show();
+            }
 
             else if (Answer.value == "0311") {
                 Title.innerHTML = ("0311")
-                Content.innerHTML = ("是交往紀念日，也是我跟你的生日月分，是最重要的四個數字，承載了我跟你許多的回憶，每有那天就沒有現在，希望你有玩得開心，遊戲就到這邊啦！不過的確也沒有禮物，但你可以看看冰箱。啊！支線任務想要解完要先解喔。");
+                Content.innerHTML = ("是交往紀念日，也是我跟你的生日月分，是最重要的四個數字，承載了我跟你許多的回憶，每有那天就沒有現在，希望你有玩得開心，遊戲就到這邊啦！不過的確也沒有禮物，明年賺錢我們再出去玩。<br>但你可以看看冰箱。啊！支線任務想要解完要先解喔。");
+                const Cr = Content.innerHTML
                 $("#ir").show();
             }
 
@@ -255,11 +290,41 @@
 
         // console.log($('#ia>img').attr('alt'))
         $(".icon div").on("click", function () {
+
             let num = $(this).attr('id').substr(1, 1);
-            // Title.innerHTML = (`$("id ${num}"")`)
-            let iconName = ($(`#i${num}>img`).attr('alt'));
-            Title.innerHTML = (iconName);
-            Content.innerHTML = (`C${num}`);
+
+            if (num == "a") {
+                // Title.innerHTML = (`$("id ${num}"")`)
+                let iconName = ($(`#i${num}>img`).attr('alt'));
+                Title.innerHTML = (iconName);
+                Content.innerHTML = ("<img src='./image/錢包位置.png' alt='錢包位置'>");
+            }
+
+            else if (num == "n") {
+                let iconName = ($(`#i${num}>img`).attr('alt'));
+                Title.innerHTML = (iconName);
+                Content.innerHTML = ("<img src='./image/神秘物體.png' alt='神秘物體'>");
+            }
+
+            else if (num == "o") {
+                let iconName = ($(`#i${num}>img`).attr('alt'));
+                Title.innerHTML = (iconName);
+                Content.innerHTML = ("<img src='./image/鑰匙-07.png' alt='鑰匙'>");
+            }
+
+            else if (num == "p") {
+                let iconName = ($(`#i${num}>img`).attr('alt'));
+                Title.innerHTML = (iconName);
+                Content.innerHTML = ("<img src='./image/拍貼機.png' alt='拍貼機'>");
+            }
+
+            else {
+                // Title.innerHTML = (`$("id ${num}"")`)
+                let iconName = ($(`#i${num}>img`).attr('alt'));
+                Title.innerHTML = (iconName);
+                Content.innerHTML = (C`${num}`);
+            }
+
 
         })
     </script>

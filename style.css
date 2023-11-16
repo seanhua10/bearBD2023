@@ -102,6 +102,12 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
+.content>img{
+    height: 90%;
+    width: auto;
+    border: 3px solid #726060;
+}
+
 .icon {
     width: 80%;
     /* height: 192px; */
@@ -122,6 +128,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grey {
+    filter: grayscale(100%);
 }
 
 img {
