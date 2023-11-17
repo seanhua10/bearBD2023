@@ -41,61 +41,62 @@
         </div>
         <div class="icon">
 
-            <div class="box" id="ia"> <img src="./icon/錢包.png" alt="錢包"></div>
+            <div class="box" id="i1"> <img src="./icon/錢包.png" alt="錢包"></div>
 
 
-            <div class="box" id="ib"> <img src="./icon/車票.png" alt="第一次見面的車票"></div>
+            <div class="box" id="i2"> <img src="./icon/車票.png" alt="第一次見面的車票"></div>
 
 
-            <div class="box" id="ic"> <img src="./icon/標籤機.png" alt="標籤機" class="grey"></div>
+            <div class="box" id="i3"> <img src="./icon/標籤機.png" alt="標籤機" class="grey"></div>
 
 
-            <div class="box" id="id"> <img src="./icon/標籤機.png" alt="裏.標籤機"></div>
+            <div class="box" id="i4"> <img src="./icon/標籤機.png" alt="裏.標籤機"></div>
 
 
-            <div class="box" id="ie"> <img src="./icon/面具.png" alt="雙一面具"></div>
+            <div class="box" id="i5"> <img src="./icon/面具.png" alt="雙一面具"></div>
 
 
-            <div class="box" id="if"> <img src="./icon/裙子.png" alt="第一次穿的裙子"></div>
+            <div class="box" id="i6"> <img src="./icon/裙子.png" alt="第一次穿的裙子"></div>
 
 
-            <div class="box" id="ig"> <img src="./icon/漢堡.png" alt="卡比漢堡" class="grey"></div>
+            <div class="box" id="i7"> <img src="./icon/漢堡.png" alt="卡比漢堡" class="grey"></div>
 
 
-            <div class="box" id="ih"> <img src="./icon/漢堡.png" alt="裏.卡比漢堡"></div>
+            <div class="box" id="i8"> <img src="./icon/漢堡.png" alt="裏.卡比漢堡"></div>
 
 
-            <div class="box" id="ii"> <img src="./icon/娃娃.png" alt="熊熊"></div>
+            <div class="box" id="i9"> <img src="./icon/娃娃.png" alt="熊熊"></div>
 
 
-            <div class="box" id="ij"><img src="./icon/鑰匙.png" alt="鑰匙"></div>
+            <div class="box" id="i10"><img src="./icon/鑰匙.png" alt="鑰匙"></div>
 
 
-            <div class="box" id="ik"><img src="./icon/櫃子.png" alt="櫃子"></div>
+            <div class="box" id="i11"><img src="./icon/櫃子.png" alt="櫃子"></div>
 
 
-            <div class="box" id="il"><img src="./icon/貝果.png" alt="媽的多重宇宙" class="grey"></div>
+            <div class="box" id="i12"><img src="./icon/貝果.png" alt="媽的多重宇宙" class="grey"></div>
 
 
-            <div class="box" id="im"><img src="./icon/貝果.png" alt="裏.媽的多重宇宙"></div>
+            <div class="box" id="i13"><img src="./icon/貝果.png" alt="裏.媽的多重宇宙"></div>
 
 
-            <div class="box" id="in"><img src="./icon/照片.png" alt="第一次的拍立得"></div>
+            <div class="box" id="i14"><img src="./icon/照片.png" alt="第一次的拍立得"></div>
 
 
-            <div class="box" id="io"><img src="./icon/蝦子.png" alt="神秘照片"></div>
+            <div class="box" id="i15"><img src="./icon/蝦子.png" alt="神秘照片"></div>
 
 
-            <div class="box" id="ip"><img src="./icon/其咖挖.png" alt="第一次的拍貼機器" class="grey"></div>
+            <div class="box" id="i16"><img src="./icon/其咖挖.png" alt="第一次的拍貼機器" class="grey"></div>
 
 
-            <div class="box" id="iq"><img src="./icon/其咖挖.png" alt="裏.第一次的拍貼機器"></div>
+            <div class="box" id="i17"><img src="./icon/其咖挖.png" alt="裏.第一次的拍貼機器"></div>
 
 
-            <div class="box" id="ir"><img src="./icon/冰箱.png" alt="冰箱"></div>
+            <div class="box" id="i18"><img src="./icon/冰箱.png" alt="冰箱"></div>
 
         </div>
     </div>
+    
 
     <script>
         // $(window).on("load", function () {
@@ -110,24 +111,44 @@
         const Icon = document.querySelector(".icon");
 
         $(".box").hide();
-
+        
+        let Arr = [
+            "方便更改",
+            "撿到錢包",
+            "這是我們第一次見面，那也是我第一次去坐火車，第一次跑到沒有見面過的人家裡，你也是第一次跟陌生人過夜，我想你應該也蠻緊張，雖然我看起來比你還笨很多，而那天也真的很開心，是直到今天都記得非常清晰的日子。<br>對我來說那天很重要，也因此我把<span class='red'>車票</span>留了下來，不知道你還記不記得，那應該是我們生命中最難忘的幾個日子。<br>喔對了鑰匙放在洗衣膠囊裡面，接下來的日子也要好好過，路也要小心走喔。",
+            "還記得第一次見面時，當我們要分開的時候你說了什麼嗎?<div>我想我們 _ _ _ _ _ 了</div>",
+            "第一次見面就是住在你家，那個夜晚我們也都很開心，雖然也沒做什麼，見面的時間也不太長，但我們都很喜歡對方，也還記得你說喜歡我的味道，我也喜歡被你抱的感覺，我們都喜歡在對方身邊溫暖的感受。<br>要分開的時候，我們都躺在床上，你說：「我不想你離開」，我回你之後還會再見面阿，你卻說我們不會再見面了，我還記得你在床上擦乾我的眼淚拍拍我的頭，那大概是你第一次傷我的心吧？<br>恩、你真的很吉掰。",
+            "基本上這是我們第一次一起玩密室逃脫，雖然沒有很厲害的機關，但也是自那之後我們找到了非常相投的興趣，也因此有了今天的這個遊戲，今後都要好好玩下去喔。",
+            "這幾年真的做了經歷了好多不同東西，蒐集了好多娃娃、玩具、公仔，每個<span class='red'>娃娃</span>都是一段回憶",
+            "打開筆電，會給你一些提示...",
+            "還記得把那隻卡比放到我手上的時候嗎？你說看到他就想到我，想到我就會難受。那是我們分開的時候，分開的時候我們都一樣難過，但我也不知道該怎麼做好，我已經把能說的都說完了。<br>那段日子現在想起來心都還是會痛痛的，對我們兩個人都很難過的一段回憶，對我而言這件事情必然會發生，我想把他當作一個逗號，而你也一直沒有理解，但又有什麼對跟錯嗎？<br>希望我們都有從中間學到什麼。",
+            "熊熊對我來說是你，可以跟他說話還有抱怨；熊熊對你來說是我，看到他就會想到我，抱著他的時候我們都會想到彼此。<br>他不是我最喜歡的拉拉熊，但他對我來說代表太多了，而且他的綽號跟你一樣，所以他是我最愛的娃娃。<br>說到這些回憶，都是因為你有騎摩托車載我們出去玩，去找看看吧。",
+            "可能是有點錢還有疫情結束的關係，又或許是我們更珍惜對方了，這年開始我們更常出去玩，我們去看了不少展覽，也去很多地方玩。<br>我們都有留一些紀念品下來，你還記得我們都去哪裡，還有順序嗎？(提示：在櫃子那邊)",
+            "6/1我們在台中玩，第一次跟你的朋友出去，我的印象很深<br>9/8我們一起去猴硐貓村，好像那時候開始想在我們去的每個地方買紀念品<br>11/1我送你那個櫃子，你說很爛，但現在看起來很棒對吧，不過日期我忘記了<br>12/12我們一起去竹南，有點像背包客自助行那樣，我的世界只有你、每天旁邊都是你，想到就覺得開心<br>12/26我們跑去看JOJO展拉，我們都喜歡的動漫還真的不多，很開心當時有看過。<br>這些<span class='red'>照片</span>、紀念品真的代表了許多我們的回憶。",
+            "這張票代表很重要的東西",
+            "我不知道你還記不記得我看這部電影第一個哭的地方，在某一個平行宇宙小蓮變成了武打明星，威門也變成了有錢人，都過上了很好的生活，但跟對方對到眼時，有一千萬個無法言喻的情緒湧現，就好像命中注定要在一起一樣。<br>或許是在那一刻我決定要跟你複合，我想要珍惜能夠有的幸福，無論長短、無論方法、無論結果，只要過程有你就好，因為那是無論如何，我都不想放手的東西。",
+            "說到回憶，你還記得這個神秘物體是甚麼嗎?",
+            "今年真的很辛苦，從搞畢業專題、搬家、找工作或是直播上都有很多的不順利，但今年也是我們很重要的一年，我們有了一個一起的家了，雖然不算完全同居，但真的覺得自由了很多。<br>看到鑰匙都還會想到那天的樣子，你應該也都還記得吧？<br>鑰匙就是補足缺失的部分。",
+            "<img src='./image/拍貼機.png' alt='拍貼機'>",
+            "最快樂的日子就是有你在的日子，今年雖然很苦，但以後一定會過得很開心，只要有彼此在身邊，接下來我們也都要繼續努力喔。",
+            "是交往紀念日，也是我跟你的生日月分，是最重要的四個數字，承載了我跟你許多的回憶，每有那天就沒有現在，希望你有玩得開心，遊戲就到這邊啦！不過的確也沒有禮物，明年賺錢我們再出去玩。<br>但你可以看看冰箱。啊！支線任務想要解完要先解喔。"
+        ]
 
 
         Confirm.addEventListener("click", function (item) {
 
             if (Answer.value == "手機") {
                 Title.innerHTML = ("錢包")
-                $("#ia").show();
+                $("#i1").show();
             }
 
             else if (Answer.value == "20190308") {
                 $(".filter").removeClass("filter")
                 Year.style.opacity = "100%"
                 Title.innerHTML = ("20190308")
-                Content.innerHTML = ("這是我們第一次見面，那也是我第一次去坐火車，第一次跑到沒有見面過的人家裡，你也是第一次跟陌生人過夜，我想你應該也蠻緊張，雖然我看起來比你還笨很多，而那天也真的很開心，是直到今天都記得非常清晰的日子。<br>對我來說那天很重要，也因此我把<span class='red'>車票</span>留了下來，不知道你還記不記得，那應該是我們生命中最難忘的幾個日子。<br>喔對了鑰匙放在洗衣膠囊裡面，接下來的日子也要好好過，路也要小心走喔。");
-                const Cb = Content.innerHTML
+                Content.innerHTML = (Arr[2]);
                 Year.style.opacity = "100%"
-                $("#ib").show();
+                $("#i2").show();
             }
 
             else if (Answer.value == "車票") {
@@ -137,31 +158,27 @@
 
             else if (Answer.value == "標籤機") {
                 Title.innerHTML = ("支線任務:第一次的回憶")
-                Content.innerHTML = ("還記得第一次見面時，當我們要分開的時候你說了什麼嗎?<div>我想我們 _ _ _ _ _ 了</div>");
-                const Cc = Content.innerHTML
-                $("#ic").show();
+                Content.innerHTML = (Arr[3]);
+                $("#i3").show();
             }
 
             else if (Answer.value == "不會再見面") {
                 Title.innerHTML = ("支線任務達成:第一次的回憶")
-                Content.innerHTML = ("第一次見面就是住在你家，那個夜晚我們也都很開心，雖然也沒做什麼，見面的時間也不太長，但我們都很喜歡對方，也還記得你說喜歡我的味道，我也喜歡被你抱的感覺，我們都喜歡在對方身邊溫暖的感受。<br>要分開的時候，我們都躺在床上，你說：「我不想你離開」，我回你之後還會再見面阿，你卻說我們不會再見面了，我還記得你在床上擦乾我的眼淚拍拍我的頭，那大概是你第一次傷我的心吧？<br>恩、你真的很吉掰。");
-                const Cd = Content.innerHTML
-                $("#id").show();
+                Content.innerHTML = (Arr[4]);
+                $("#i4").show();
             }
 
             else if (Answer.value == "20190809") {
                 Year.innerHTML = (2020)
                 Title.innerHTML = ("20190809")
-                Content.innerHTML = ("接下來就是交往的第二年，在那之後也你也陪我做很多事情，我第一次穿裙子是為了你也是為了自己，你給了我很多勇氣，所以讓我有今天的樣子，你也都會在穿裙子的時候給我摸摸，對我來說有很多回憶");
-                const Ce = Content.innerHTML
-                $("#ie").show();
+                Content.innerHTML = (Arr[5]);
+                $("#i5").show();
             }
 
             else if (Answer.value == "SHIRT") {
                 Title.innerHTML = ("SHIRT")
-                Content.innerHTML = ("這幾年真的做了經歷了好多不同東西，蒐集了好多娃娃、玩具、公仔，每個<span class='red'>娃娃</span>都是一段回憶");
-                const Cf = Content.innerHTML
-                $("#if").show();
+                Content.innerHTML = (Arr[6]);
+                $("#i6").show();
             }
 
             else if (Answer.value == "娃娃") {
@@ -197,85 +214,78 @@
 
             else if (Answer.value == "漢堡卡比") {
                 Title.innerHTML = ("支線任務出現：心碎的回憶")
-                Content.innerHTML = ("打開筆電，會給你一些提示...");
-                const Cg = Content.innerHTML
-                $("#ig").show();
+                Content.innerHTML = (Arr[7]);
+                $("#i7").show();
             }
 
             else if (Answer.value == "BREAK UP") {
                 Title.innerHTML = ("支線任務達成:心碎的回憶")
-                Content.innerHTML = ("還記得把那隻卡比放到我手上的時候嗎？你說看到他就想到我，想到我就會難受。那是我們分開的時候，分開的時候我們都一樣難過，但我也不知道該怎麼做好，我已經把能說的都說完了。<br>那段日子現在想起來心都還是會痛痛的，對我們兩個人都很難過的一段回憶，對我而言這件事情必然會發生，我想把他當作一個逗號，而你也一直沒有理解，但又有什麼對跟錯嗎？<br>希望我們都有從中間學到什麼。");
-                const Ch = Content.innerHTML
-                $("#ih").show();
+                Content.innerHTML = (Arr[8]);
+                $("#i8").show();
             }
 
             else if (Answer.value == "熊熊") {
                 Title.innerHTML = ("熊熊")
-                Content.innerHTML = ("熊熊對我來說是你，可以跟他說話還有抱怨；熊熊對你來說是我，看到他就會想到我，抱著他的時候我們都會想到彼此。<br>他不是我最喜歡的拉拉熊，但他對我來說代表太多了，而且他的綽號跟你一樣，所以他是我最愛的娃娃。<br>說到這些回憶，都是因為你有騎摩托車載我們出去玩，去找看看吧。");
-                const Ci = Content.innerHTML
-                $("#ii").show();
+                Content.innerHTML = (Arr[9]);
+                $("#i9").show();
             }
 
             else if (Answer.value == "鑰匙") {
                 Year.innerHTML = (2022)
                 Title.innerHTML = ("鑰匙")
-                Content.innerHTML = ("可能是有點錢還有疫情結束的關係，又或許是我們更珍惜對方了，這年開始我們更常出去玩，我們去看了不少展覽，也去很多地方玩。<br>我們都有留一些紀念品下來，你還記得我們都去哪裡，還有順序嗎？(提示：在櫃子那邊)");
-                const Cj = Content.innerHTML
-                $("#ij").show();
+                Content.innerHTML = (Arr[10]);
+                $("#i10").show();
             }
 
             else if (Answer.value == "SEPIL") {
                 Title.innerHTML = ("SEP17")
-                Content.innerHTML = ("6/1我們在台中玩，第一次跟你的朋友出去，我的印象很深<br>9/8我們一起去猴硐貓村，好像那時候開始想在我們去的每個地方買紀念品<br>11/1我送你那個櫃子，你說很爛，但現在看起來很棒對吧，不過日期我忘記了<br>12/12我們一起去竹南，有點像背包客自助行那樣，我的世界只有你、每天旁邊都是你，想到就覺得開心<br>12/26我們跑去看JOJO展拉，我們都喜歡的動漫還真的不多，很開心當時有看過。<br>這些<span class='red'>照片</span>、紀念品真的代表了許多我們的回憶。");
-                const Ck = Content.innerHTML
-                $("#ik").show();
+                Content.innerHTML = (Arr[11]);
+                $("#i11").show();
             }
 
             else if (Answer.value == "媽的多重宇宙") {
                 Title.innerHTML = ("支線任務:那些重修舊好的回憶")
-                Content.innerHTML = ("這張票代表很重要的東西");
-                const Cl = Content.innerHTML
-                $("#il").show();
+                Content.innerHTML = (Arr[12]);
+                $("#i12").show();
             }
 
             else if (Answer.value == "貝果") {
                 Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
-                Content.innerHTML = ("我不知道你還記不記得我看這部電影第一個哭的地方，在某一個平行宇宙小蓮變成了武打明星，威門也變成了有錢人，都過上了很好的生活，但跟對方對到眼時，有一千萬個無法言喻的情緒湧現，就好像命中注定要在一起一樣。<br>或許是在那一刻我決定要跟你複合，我想要珍惜能夠有的幸福，無論長短、無論方法、無論結果，只要過程有你就好，因為那是無論如何，我都不想放手的東西。");
-                const Cm = Content.innerHTML
-                $("#im").show();
+                Content.innerHTML = (Arr[13]);
+                $("#i13").show();
             }
 
             else if (Answer.value == "照片") {
                 Year.innerHTML = (2023)
                 Title.innerHTML = ("照片")
-                Content.innerHTML = ("說到回憶，你還記得這個神秘物體是甚麼嗎?");
-                $("#in").show();
+                Content.innerHTML = (Arr[14]);
+                $("#i14").show();
             }
 
             else if (Answer.value == "蝦子") {
                 Title.innerHTML = ("蝦子")
-                Content.innerHTML = ("今年真的很辛苦，從搞畢業專題、搬家、找工作或是直播上都有很多的不順利，但今年也是我們很重要的一年，我們有了一個一起的家了，雖然不算完全同居，但真的覺得自由了很多。<br>看到鑰匙都還會想到那天的樣子，你應該也都還記得吧？<br>鑰匙就是補足缺失的部分。");
-                $("#io").show();
+                Content.innerHTML = (Arr[15]);
+                $("#i15").show();
             }
 
             else if (Answer.value == "CHIIKAWA") {
                 Title.innerHTML = ("支線任務:最快樂的回憶")
-                Content.innerHTML = ("<img src='./image/拍貼機.png' alt='拍貼機'>");
-                $("#ip").show();
+                Content.innerHTML = (Arr[16]);
+                $("#i16").show();
             }
 
             else if (Answer.value == "") {
                 Title.innerHTML = ("支線任務達成:那些重修舊好的回憶")
-                Content.innerHTML = ("最快樂的日子就是有你在的日子，今年雖然很苦，但以後一定會過得很開心，只要有彼此在身邊，接下來我們也都要繼續努力喔。");
+                Content.innerHTML = (Arr[17]);
                 const Cq = Content.innerHTML
-                $("#iq").show();
+                $("#i17").show();
             }
 
             else if (Answer.value == "0311") {
                 Title.innerHTML = ("0311")
-                Content.innerHTML = ("是交往紀念日，也是我跟你的生日月分，是最重要的四個數字，承載了我跟你許多的回憶，每有那天就沒有現在，希望你有玩得開心，遊戲就到這邊啦！不過的確也沒有禮物，明年賺錢我們再出去玩。<br>但你可以看看冰箱。啊！支線任務想要解完要先解喔。");
+                Content.innerHTML = (Arr[18]);
                 const Cr = Content.innerHTML
-                $("#ir").show();
+                $("#i18").show();
             }
 
             else {
@@ -318,11 +328,13 @@
                 Content.innerHTML = ("<img src='./image/拍貼機.png' alt='拍貼機'>");
             }
 
-            else {
+            else{
                 // Title.innerHTML = (`$("id ${num}"")`)
                 let iconName = ($(`#i${num}>img`).attr('alt'));
                 Title.innerHTML = (iconName);
-                Content.innerHTML = (C`${num}`);
+                // let Con = 'C'+num
+                Content.innerHTML = (Arr[`${num}`]);
+                console.log(Cb)
             }
 
 
