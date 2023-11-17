@@ -8,14 +8,16 @@ body {
 }
 
 .filter {
-    width: 100%;
-    height: 100%;
-    filter:grayscale(100%)  ;
+    /* filter:grayscale(100%)  */
+}
+
+.filter_out {
+    transition: 1.5s;
+    filter: grayscale(0%)
 }
 
 .container {
     width: 100%;
-    /* height: 100%; */
     background-color: #94976C;
     display: flex;
     flex-direction: column;
@@ -90,6 +92,7 @@ body {
     text-align: center;
 }
 
+
 .content {
     width: 100%;
     height: 280px;
@@ -100,12 +103,50 @@ body {
     font-size: 15px;
     line-height: 1.2;
     border-radius: 0 0 10px 10px;
+    /* text-align: center; */
 }
 
-.content>img{
+.picc {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#chiicawa {
+    width: 360px;
+    height: 534px;
+    border: 2px solid #726060;
+}
+
+.bar{
+    width: 360px;
+    background-color: #969B51;
+    border: 2px solid #726060;
+    display: flex;
+    justify-content: end;
+}
+
+.bar>img{
+    width: 32px;
+}
+
+.content>img {
     height: 90%;
     width: auto;
     border: 3px solid #726060;
+}
+
+.content>#long_pic{
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/神秘物體.jpg);
+    background-size: cover;
+    overflow: hidden;
 }
 
 .icon {
@@ -124,7 +165,7 @@ body {
     background-color: #C8C0B4;
     border: 2px solid #726060;
     border-radius: 4px;
-    margin: 8px 8px 0 8px;
+    margin: 8px 4px 0 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,8 +175,12 @@ body {
     filter: grayscale(100%);
 }
 
-img {
-    width: 32px;
+.icon img{
+    width: 36px;
+}
+
+.orange {
+    color: #df5959;
 }
 
 .red {
