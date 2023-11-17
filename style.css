@@ -8,7 +8,7 @@ body {
 }
 
 .filter {
-    /* filter:grayscale(100%)  */
+    filter:grayscale(100%) 
 }
 
 .filter_out {
